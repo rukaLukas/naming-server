@@ -1,0 +1,14 @@
+server.port: 8761
+spring:
+  cloud:
+    config:
+      enabled: false
+  application:
+    name: naming-server
+eureka:
+  instance:
+    registry:
+      default-open-for-traffic-count: 0
+  client:
+    fetch-registry: true
+    register-with-eureka: true
